@@ -89,6 +89,18 @@ git config lfs.threshold
 git lfs track "*.parquet"
 ```
 
+再次查看确实生效了:  
+
+```
+git lfs ls-files
+```
+
+<img src="./images/parquet.png" alt="parquet" style="zoom:80%;"> 
+
+再看下github页面显示:  
+
+<img src="./images/stored_lfs.png" alt="stored_lfs" style="zoom:80%;"> 
+
 
 
 
