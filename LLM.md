@@ -78,6 +78,20 @@ git commit -m "add test.psd"
 git push origin main
 ```
 
+5.设置阈值
+
+通过上面的命令并没有将文件替换为指针，估计是文件太小，所以调整下阈值测试下，先改为5MB  
+
+```bash
+git config --global lfs.threshold 5MB
+git config lfs.threshold 5MB
+git config lfs.threshold
+git lfs track "*.parquet"
+```
+
+
+
+
 
 ### 参考资料
 
