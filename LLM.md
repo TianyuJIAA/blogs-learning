@@ -102,7 +102,21 @@ git lfs ls-files
 <img src="./images/stored_lfs.png" alt="stored_lfs" style="zoom:80%;"> 
 
 
+查看指针文件信息:  
 
+```bash
+git show HEAD:data/train-00000-of-00001.parquet
+```
+
+在本地目录你看到的就是实际的文件，但是实际上git存储的是指针文件  
+
+实际文件:  
+
+<img src="./images/shiji.png" alt="shiji" style="zoom:80%;"> 
+
+指针文件:  
+
+<img src="./images/point.png" alt="point" style="zoom:80%;"> 
 
 
 ### 参考资料
