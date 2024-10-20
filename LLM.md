@@ -125,3 +125,19 @@ git show HEAD:data/train-00000-of-00001.parquet
 [Git LFS官方网站](https://git-lfs.com/)  
 [知乎](https://zhuanlan.zhihu.com/p/690634358)  
 [csdn](https://blog.csdn.net/xiaojia1001/article/details/140616622)  
+
+## GPU算力图
+
+<img src="./images/GPU算力.png" alt="point" style="zoom:50%;"> 
+
+具体选取说明参考: [Auto-Dl](https://www.autodl.com/docs/gpu/)
+
+## 常用名词
+
+### 混合精度训练
+
+混合精度技术是一种在深度学习训练中使用的技巧，旨在提高计算效率和节省内存，同时保持模型的准确率。具体来说就是通过结合不同的数据精度来实现更快的计算速度  
+
+`单精度(FP32)`: 使用32位浮点数，提供较高的精度，但内存使用较大
+`半精度(FP16)`: 使用16位浮点数，对内存的使用减少，计算速度更快，但可能导致精度损失
+`混合精度`: 在训练过程中，模型的某些部分(如权重更新)使用FP126，而其他部分(如损失计算)则保持在FP32，这样可以在保持准确率的同时，利用FP16的速度优势
